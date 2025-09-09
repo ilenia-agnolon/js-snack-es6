@@ -73,4 +73,46 @@ Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “
 Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 */
 
+// creo un array che contiene oggetti "squadra di calcio"
+// ogni oggetto ha 3 proprietà: nome (stringa), punti e falli (tutti inizialmente a 0)
+const squadre = [
+  {
+    nome: "Milan",
+    punti: 0,
+    falli: 0
+  },
+  {
+    nome: "Inter",
+    punti: 0,
+    falli: 0
+  },
+  {
+    nome: "Juventus",
+    punti: 0,
+    falli: 0
+  },
+  {
+    nome: "Roma",
+    punti: 0,
+    falli: 0
+  }
+];
+
+
+//1. GENERARE NUMERI RANDOM PER OGNI SQUADRA
+
+
+//2. CREO UN ARRAY VUOTO
+squadreConFalli = []; //lo userò per salvare solo le info richieste
+
+
+
+//3. RIEMPIRE IL NUOVO ARRAY
+
+
+
+//4. STAMPARE IN CONSOLE
+
+
+
 
