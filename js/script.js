@@ -108,20 +108,24 @@ for (let i = 0; i < squadre.length; i++) {
     squadraCheStoGuardando.falli = Math.floor(Math.random() * 11);
 }
 
+//testo il risultato (verifico l'array squadre aggiornato con i numeri random)
 console.log(squadre);
 
 
 //2. CREO UN ARRAY VUOTO
-squadreConFalli = []; //lo userò per salvare solo le info richieste
+squadreConFalli = []; //lo userò per salvare solo le info richieste (nomi e falli)
 
 
 
 //3. RIEMPIRE IL NUOVO ARRAY
+for (let i = 0; i < .length; i ++) {
 
+    const squadraInAnalisi = [i];
+}
 
 
 //4. STAMPARE IN CONSOLE
-
+console.log(squadreConFalli)
 
 
 
