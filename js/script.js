@@ -109,7 +109,7 @@ for (let i = 0; i < squadre.length; i++) {
 }
 
 //testo il risultato (verifico l'array squadre aggiornato con i numeri random)
-console.log(squadre);
+console.log("Squadre con numeri random: ", squadre);
 
 
 //2. CREO UN ARRAY VUOTO
@@ -118,14 +118,24 @@ squadreConFalli = []; //lo userò per salvare solo le info richieste (nomi e fal
 
 
 //3. RIEMPIRE IL NUOVO ARRAY
-for (let i = 0; i < .length; i ++) {
+for (let i = 0; i < squadre.length; i ++) {
 
-    const squadraInAnalisi = [i];
+    //a. prendo la squadra del giro corrente
+    const squadraInAnalisi = squadre[i];
+
+    //b. creo un nuovo oggetto che contiene solo nome e falli
+    const nuovaSquadra = {
+        nome: squadraInAnalisi.nome,
+        falli: squadraInAnalisi.falli
+    };
+
+        //c. lo aggiungo al nuovo array con push
+        squadreConFalli.push(nuovaSquadra);
 }
 
 
 //4. STAMPARE IN CONSOLE
-console.log(squadreConFalli)
+console.log("Squadre con falli: ", squadreConFalli);
 
 
 
