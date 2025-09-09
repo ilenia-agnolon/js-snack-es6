@@ -13,30 +13,43 @@ Stampare a schermo la bici con peso minore.
 const biciclette = [
   {//biciclette[0]
     nome: "Bianchi Sprint",    // nome della bici
-    peso: 7.2                  // peso in kg
+    peso: 7                 // peso in kg
   },
   {//biciclette[1]
     nome: "Specialized Tarmac",
-    peso: 6.8
+    peso: 6
   },
   {//biciclette[2]
     nome: "Cannondale SuperSix",
-    peso: 7.0
+    peso: 5
   },
   {//biciclette[3]
     nome: "Trek Emonda",
-    peso: 6.7
+    peso: 8
   }
 ]
 
 
 //1. Inizializzare la variabile
-let biciConPesoMinore = biciclette [0];
+let biciConPesoMinore = biciclette [0]; //parto assumendo che la bici più leggera sia la prima dell’array
 
-//2. Ciclare tutto l'array con for
+//2. Ciclare tutto l'array biciclette con for
+for (let i = 0; i < biciclette.length; i++) {
 
+    //a. prendo la bici del giro corrente/che sto guardando così in ogni giro, salvo in questa variabile l’oggetto bici che sto analizzando
+    const biciCheStoGuardando = biciclette [i]; 
+
+        //b. confronto con una condizione il peso della bici che sto guardando con il peso della bici che finora è la più leggera
+            if (biciCheStoGuardando.peso < biciConPesoMinore.peso) {
+
+                //c. se la bici attuale pesa meno, aggiorno la variabile biciConPesoMinore con questa nuova bici
+                biciConPesoMinore = biciCheStoGuardando;
+            }
+}
 
 //3. Stampare in console per vedere quale bici è la più leggera
+console.log("La bici più leggera è: ", biciConPesoMinore);
+
 
 
 
