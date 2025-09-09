@@ -100,6 +100,15 @@ const squadre = [
 
 
 //1. GENERARE NUMERI RANDOM PER OGNI SQUADRA
+for (let i = 0; i < squadre.length; i++) {
+
+    const squadraCheStoGuardando =  squadre[i];
+
+    squadraCheStoGuardando.punti = Math.floor(Math.random() * 11); //numeri da 0 a 10 inclusi
+    squadraCheStoGuardando.falli = Math.floor(Math.random() * 11);
+}
+
+console.log(squadre);
 
 
 //2. CREO UN ARRAY VUOTO
