@@ -11,19 +11,19 @@ Stampare a schermo la bici con peso minore.
 
 //creo un array che contiene oggetti "bici da corsa" -> ogni oggetto ha 2 proprietà: nome e peso
 const biciclette = [
-  {
+  {//biciclette[0]
     nome: "Bianchi Sprint",    // nome della bici
     peso: 7.2                  // peso in kg
   },
-  {
+  {//biciclette[1]
     nome: "Specialized Tarmac",
     peso: 6.8
   },
-  {
+  {//biciclette[2]
     nome: "Cannondale SuperSix",
     peso: 7.0
   },
-  {
+  {//biciclette[3]
     nome: "Trek Emonda",
     peso: 6.7
   }
@@ -34,6 +34,7 @@ const biciclette = [
 let biciConPesoMinore = biciclette [0];
 
 //2. Ciclare tutto l'array con for
+
 
 //3. Stampare in console per vedere quale bici è la più leggera
 
