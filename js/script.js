@@ -59,7 +59,7 @@ for (let i = 0; i < biciclette.length; i++) {
 
 
 //3. Stampare in console per vedere quale bici è la più leggera
-console.log("La bici più leggera è: ", biciConPesoMinore);
+console.log("La bici più leggera è: ", biciConPesoMinore, "kg");
 
 
 
